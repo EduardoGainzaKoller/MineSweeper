@@ -32,9 +32,7 @@ public class EasyTableInitializer implements TableInitializer {
     }
 
     private Cell createCell(int rowIndex, int columnIndex) {
-
-        Cell cell = new Cell(rowIndex, columnIndex);
-        return cell;
+        return new Cell(rowIndex, columnIndex);
     }
 
     private void addMines() {

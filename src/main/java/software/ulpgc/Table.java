@@ -21,6 +21,7 @@ public class Table {
         return mines;
     }
 
+
     @Override
     public String toString() {
         String result = "";
