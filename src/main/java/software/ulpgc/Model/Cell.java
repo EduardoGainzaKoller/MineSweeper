@@ -1,6 +1,4 @@
-package software.ulpgc;
-
-import java.util.Objects;
+package software.ulpgc.Model;
 
 public class Cell {
     private final int posX;

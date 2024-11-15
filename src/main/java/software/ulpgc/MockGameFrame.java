@@ -1,5 +1,7 @@
 package software.ulpgc;
 
+import software.ulpgc.Model.Table;
+
 import javax.swing.*;
 import java.awt.*;
 

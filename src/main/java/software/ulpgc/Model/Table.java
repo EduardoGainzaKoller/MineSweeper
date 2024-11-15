@@ -1,4 +1,4 @@
-package software.ulpgc;
+package software.ulpgc.Model;
 
 
 import java.util.ArrayList;
@@ -6,10 +6,10 @@ import java.util.List;
 
 public class Table {
     private final List<List<Cell>> table;
-    private final List<Cell> mines;
+    private final List<Cell> minesCoordinates;
 
     public Table() {
-        this.mines = new ArrayList<>();
+        this.minesCoordinates = new ArrayList<>();
         table = new ArrayList<>();
     }
 
@@ -17,10 +17,13 @@ public class Table {
         return table;
     }
 
-    public List<Cell> getMines() {
-        return mines;
+    public List<Cell> getMinesCoordinates() {
+        return minesCoordinates;
     }
 
+    public List<Cell> get(int index) {
+        return table.get(index);
+    }
 
     @Override
     public String toString() {
@@ -31,7 +34,7 @@ public class Table {
         }
 
         result+= "\n";
-        for (Cell mine : mines) {
+        for (Cell mine : minesCoordinates) {
             result+= mine.toString() + "\n";
         }
         return result;

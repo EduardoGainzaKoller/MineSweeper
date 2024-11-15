@@ -1,4 +1,6 @@
-package software.ulpgc;
+package software.ulpgc.Model;
+
+import software.ulpgc.Model.Interfaces.TableInitializer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +8,7 @@ import java.util.Random;
 
 public class EasyTableInitializer implements TableInitializer {
     private static final int size = 8;
-    private int mineAmount = 10;
+    private final int mineAmount = 10;
     private final Table table;
 
     public EasyTableInitializer() {
@@ -20,6 +22,7 @@ public class EasyTableInitializer implements TableInitializer {
         }
 
         addMines();
+
         return table;
     }
 
@@ -37,14 +40,14 @@ public class EasyTableInitializer implements TableInitializer {
 
     private void addMines() {
         Random random = new Random();
-        while(mineAmount>0) {
+        int minesCreated = 0;
+        while(mineAmount>minesCreated) {
             Cell mine = new Cell(random.nextInt(0, 7), random.nextInt(0, 7));
-            if (!table.getMines().contains(mine)) {
-                table.getMines().add(mine);
-                mineAmount--;
+            if (!table.getMinesCoordinates().contains(mine)) {
+                table.getMinesCoordinates().add(mine);
+                minesCreated++;
             }
         }
-
     }
 
 }
