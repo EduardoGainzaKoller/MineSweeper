@@ -43,7 +43,6 @@ public class HardTableInitializer implements TableInitializer {
         Random random = new Random();
         int minesCreated = 0;
         while (mineAmount > minesCreated) {
-            // Generar una mina en una posición aleatoria dentro de los límites del tablero
             Cell mine = new Cell(random.nextInt(0, rows), random.nextInt(0, columns));
             if (!table.getMinesCoordinates().contains(mine)) {
                 table.getMinesCoordinates().add(mine);
