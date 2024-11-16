@@ -25,6 +25,14 @@ public class Table {
         return table.get(index);
     }
 
+    public int getRows() {
+        return table.size();
+    }
+
+    public int getColums() {
+        return table.getFirst().size();
+    }
+
     @Override
     public String toString() {
         String result = "";

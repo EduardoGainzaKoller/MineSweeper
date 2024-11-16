@@ -48,9 +48,7 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String selectedDifficulty = (String) difficultyComboBox.getSelectedItem();
-                if (commands.containsKey("DIFFICULTY")) {
-                    commands.get("DIFFICULTY").execute();
-                }
+                commands.get(selectedDifficulty).execute();
             }
         });
 

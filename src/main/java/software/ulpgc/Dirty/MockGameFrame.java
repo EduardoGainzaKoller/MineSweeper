@@ -1,4 +1,4 @@
-package software.ulpgc;
+package software.ulpgc.Dirty;
 
 import software.ulpgc.Model.Table;
 
@@ -13,7 +13,7 @@ public class MockGameFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        MockGamePanel gamePanel = new MockGamePanel(size, table);
+        MockGamePanel gamePanel = new MockGamePanel(table);
         add(gamePanel, BorderLayout.CENTER);
 
         setVisible(true);
