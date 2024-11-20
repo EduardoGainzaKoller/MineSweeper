@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="203bb448-599b-4d42-922e-b2eb234d887b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/SwingTableDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/HardOptionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/MediumOptionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/RestartCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/EasyTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/HardTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/MediumTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/interfaces/TableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/TableManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/view/TableDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/EasyOptionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/EasyOptionCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/HardOptionCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/MediumOptionCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/EasyTableBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/HardTableBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/MediumTableBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Table.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/interfaces/TableBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/MainFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="203bb448-599b-4d42-922e-b2eb234d887b" name="Changes" comment="Restart implemented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,8 +80,17 @@
       <option name="presentableId" value="Default" />
       <updated>1732026139967</updated>
       <workItem from="1732026140935" duration="4403000" />
-      <workItem from="1732125712809" duration="313000" />
+      <workItem from="1732125712809" duration="796000" />
     </task>
+    <task id="LOCAL-00001" summary="Restart implemented">
+      <option name="closed" value="true" />
+      <created>1732126125881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732126125881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restart implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restart implemented" />
   </component>
 </project>
