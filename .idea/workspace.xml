@@ -5,19 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203bb448-599b-4d42-922e-b2eb234d887b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/EasyTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/HardTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/MediumTableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/interfaces/TableBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/view/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/SwingTableDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/HardOptionCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/MediumOptionCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/RestartCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/EasyTableBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/HardTableBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/MediumTableBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/io/interfaces/TableBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/model/TableManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/view/TableDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/EasyOptionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/architecture/control/EasyOptionCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/HardOptionCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/control/MediumOptionCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Cell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/EasyTableBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/HardTableBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/MediumTableBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/model/interfaces/TableBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/minesweeper/app/MainFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +50,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2p4X5iP5ifKCyx5GaosMLKuBmeu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,8 +63,12 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/juanf/Desktop/ingeniera informatica/3 año/IS2/MineSweeperMalo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,13 +77,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="software.ulpgc.minesweeper.architecture.io" />
+      <recent name="software.ulpgc.minesweeper.architecture.control" />
+      <recent name="software.ulpgc.minesweeper.model" />
+      <recent name="software.ulpgc.minesweeper.model.interfaces" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="software.ulpgc.minesweeper.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="software.ulpgc.minesweeper.app.Main" />
       <module name="MineSweeper2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="software.ulpgc.minesweeper.*" />
+          <option name="PATTERN" value="software.ulpgc.minesweeper.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,19 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,10 +109,22 @@
       <option name="presentableId" value="Default" />
       <updated>1732026139967</updated>
       <workItem from="1732026140935" duration="4403000" />
+      <workItem from="1732125712809" duration="313000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

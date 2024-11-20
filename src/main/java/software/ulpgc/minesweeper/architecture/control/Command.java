@@ -1,4 +1,4 @@
-package software.ulpgc.minesweeper.control;
+package software.ulpgc.minesweeper.architecture.control;
 
 public interface Command {
     public void execute();

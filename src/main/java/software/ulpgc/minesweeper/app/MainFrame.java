@@ -1,7 +1,7 @@
-package software.ulpgc.minesweeper.view;
+package software.ulpgc.minesweeper.app;
 
-import software.ulpgc.minesweeper.control.Command;
-import software.ulpgc.minesweeper.model.MediumTableBuilder;
+import software.ulpgc.minesweeper.architecture.control.Command;
+import software.ulpgc.minesweeper.architecture.view.TableDisplay;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,14 +13,17 @@ import java.util.Map;
 public class MainFrame extends JFrame {
 
     private final Map<String, Command> commands;
+    private final SwingTableDisplay tableDisplay;
+    private final JPanel infoMenu;
 
     public MainFrame() {
         this.setTitle("MineSweeper");
-        this.setSize(new Dimension(650, 650));
+        this.setSize(new Dimension(750, 750));
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.add(infoMenu(), BorderLayout.NORTH);
+        this.add(infoMenu = infoMenu(), BorderLayout.NORTH);
+        this.add(tableDisplay = (SwingTableDisplay) tableDisplay(),BorderLayout.CENTER);
         commands = new HashMap<>();
     }
 
@@ -28,6 +31,22 @@ public class MainFrame extends JFrame {
         commands.put(key,value);
     }
 
+    private JPanel tableDisplay(){
+        SwingTableDisplay display = new SwingTableDisplay();
+        return display;
+    }
+
+    public SwingTableDisplay getTableDisplay(){
+        return tableDisplay;
+    }
+
+    public Map<String, Command> getCommands() {
+        return commands;
+    }
+
+    public JPanel getInfoMenu() {
+        return infoMenu;
+    }
 
     private JPanel infoMenu() {
         JPanel infoMenu = new JPanel(new FlowLayout());
@@ -51,6 +70,12 @@ public class MainFrame extends JFrame {
 
     private JButton restartButton() {
         JButton restart = new JButton("RESTART");
+        restart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                commands.get("RESTART").execute();
+            }
+        });
         return restart;
     }
 }
