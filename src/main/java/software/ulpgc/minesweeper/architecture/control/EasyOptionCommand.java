@@ -42,6 +42,7 @@ public class EasyOptionCommand implements Command {
         mainFrame.revalidate();
     }
 
+    private static boolean setImage = true;
     private void addActionListeners(List<List<JButton>> buttons) {
         for (int i = 0; i < buttons.size(); i++) {
             for (int j = 0; j < buttons.get(0).size(); j++) {
@@ -62,7 +63,12 @@ public class EasyOptionCommand implements Command {
                             }
                             handleCellClick(cell, button);
                         } else if (e.getButton() == MouseEvent.BUTTON3) {
-                            button.setIcon(new ImageIcon("src/main/resources/RedFlag.jpg"));
+                            if (setImage) {
+                                button.setIcon(new ImageIcon("src/main/resources/RedFlag.jpg"));
+                            } else {
+                                button.setIcon(null);
+                            }
+                            setImage = !setImage;
                         }
                     }
                 });
