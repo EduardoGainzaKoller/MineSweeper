@@ -5,6 +5,8 @@ import software.ulpgc.minesweeper.architecture.view.TableDisplay;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,9 +42,12 @@ public class SwingTableDisplay extends JPanel implements TableDisplay {
     }
 
     public void disableAllButtons() {
-        for (Component component : getComponents()) {
-            if (component instanceof JButton) {
-                component.setEnabled(false);
+        for (List<JButton> button : buttons) {
+            for (JButton jButton : button) {
+                MouseListener[] actionListeners = jButton.getMouseListeners();
+                for (MouseListener actionListener : actionListeners) {
+                    jButton.removeMouseListener(actionListener);
+                }
             }
         }
     }

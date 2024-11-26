@@ -1,4 +1,7 @@
-package software.ulpgc.minesweeper.architecture.model;
+package software.ulpgc.minesweeper.architecture.control;
+
+import software.ulpgc.minesweeper.architecture.model.Cell;
+import software.ulpgc.minesweeper.architecture.model.Table;
 
 import java.util.ArrayList;
 import java.util.List;

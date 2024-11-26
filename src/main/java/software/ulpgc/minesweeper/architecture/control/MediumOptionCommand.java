@@ -5,14 +5,12 @@ import software.ulpgc.minesweeper.architecture.io.MediumTableBuilder;
 import software.ulpgc.minesweeper.architecture.io.interfaces.TableBuilder;
 import software.ulpgc.minesweeper.architecture.model.Cell;
 import software.ulpgc.minesweeper.architecture.model.Table;
-import software.ulpgc.minesweeper.architecture.model.TableManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.List;
 
 public class MediumOptionCommand implements Command {
@@ -41,8 +39,6 @@ public class MediumOptionCommand implements Command {
         mainFrame.revalidate();
     }
 
-    private static boolean setImage = true;
-
     private void addActionListeners(List<List<JButton>> buttons) {
         for (int i = 0; i < buttons.size(); i++) {
             for (int j = 0; j < buttons.get(0).size(); j++) {
@@ -63,12 +59,11 @@ public class MediumOptionCommand implements Command {
                             }
                             handleCellClick(cell, button);
                         } else if (e.getButton() == MouseEvent.BUTTON3) {
-                            if (setImage) {
+                            if (button.getIcon() == null) {
                                 button.setIcon(new ImageIcon("src/main/resources/RedFlag.jpg"));
                             } else {
                                 button.setIcon(null);
                             }
-                            setImage = !setImage;
                         }
                     }
                 });
@@ -85,8 +80,6 @@ public class MediumOptionCommand implements Command {
         } else {
             List<Cell> cellsToReveal = tableManager.revealAdjacentCells(cell);
             for (Cell adjacentCell : cellsToReveal) {
-                int x = adjacentCell.row();
-                int y = adjacentCell.column();
 
                 JButton nextButton = mainFrame.getTableDisplay().getButtons().get(adjacentCell.row()).get(adjacentCell.column());
 
@@ -96,8 +89,16 @@ public class MediumOptionCommand implements Command {
                 } else {
                     nextButton.setText("");
                 }
-                nextButton.setEnabled(false);
+                removeMouseListener(nextButton);
             }
         }
+    }
+
+    private static void removeMouseListener(JButton nextButton) {
+        MouseListener[] mouseListeners = nextButton.getMouseListeners();
+        for (MouseListener mouseListener : mouseListeners) {
+            nextButton.removeMouseListener(mouseListener);
+        }
+        nextButton.setEnabled(false);
     }
 }
